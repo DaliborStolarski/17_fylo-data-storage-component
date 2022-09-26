@@ -1,0 +1,270 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+### Neutral
+
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 14px
+
+### Font
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+
+
+*/
+
+/* general */
+
+body {
+  background-color: hsl(229, 57%, 11%);
+  color: white;
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0vw 50vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* left-conainer */
+
+.left-conainer {
+  background-color: hsl(228, 56%, 26%);
+  margin-right: 30px;
+  padding: 30px;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.icon-folder, .icon-upload {
+  padding: 12px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+
+.icon-document {
+  padding: 11px 14px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+
+.icon-folder {
+  margin: 0 15px;
+}
+
+/* right-conainer */
+
+.right-container {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  padding: 0 45px;
+  margin-top: 50px;
+}
+
+.extra-container {
+  display:flex;
+  justify-content:flex-end;
+  align-items: flex-end;
+}
+
+.extra-container-p {
+  margin-top: -50px;
+  margin-bottom: 0;
+  padding: 5px 30px;
+  background-color: white;
+  color: hsl(229, 7%, 55%);
+  border-radius: 10px 10px 0px 10px;
+  font-weight: bold;
+}
+
+.triangle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.triangle-container p {
+  margin-top: 10px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 25px solid white;
+  border-left: 25px solid transparent;
+}
+
+.span-top {
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 5px;
+  color: black;
+}
+
+.span-bottom {
+  font-weight: bold;
+}
+
+.triangle-container-p {
+  color: hsl(243, 100%, 93%);
+  font-size: 13px;
+}
+
+.progress-bar-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: hsl(243, 100%, 93%);
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.progress {
+  padding: 2px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.progress-bar {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 2px 2px 1px 1px;
+}
+
+/* footer */
+
+.footer .attribution {
+  font-size: 10px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+@media screen and (max-width: 768px)  {
+
+  /* general */
+
+  body {
+    background-image: url("./images/bg-mobile.png");
+    background-position: 0vw 0vh;
+    background-size: cover;
+  }
+
+  .container {
+    width: 80vw;
+  }
+
+  .main-row {
+    height: 80vh;
+  }
+
+  /* left-conainer */
+
+  .left-conainer {
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+
+
+  /* right-conainer */
+
+  .right-container {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    padding: 30px 45px 45px 45px;
+    margin-top: -180px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .extra-container {
+    position: absolute;
+  }
+
+  .extra-container-p {
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding: 5px 30px;
+    background-color: white;
+    color: hsl(229, 7%, 55%);
+    border-radius: 10px 10px 10px 10px;
+    font-weight: bold;
+    position: relative;
+    top: 130px;
+    left: 50px;
+  }
+
+  .triangle {
+    border-top: 0px;
+    border-left: 0px;
+  }
+
+  .triangle-container-p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+}

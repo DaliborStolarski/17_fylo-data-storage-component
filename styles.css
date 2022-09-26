@@ -47,10 +47,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-main {
-  margin-bottom: 20px;
-}
-
 .container {
   width: 100vw;
   height: 100vh;
@@ -218,7 +214,11 @@ main {
   }
 
   .main-row {
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
   }
 
   /* left-conainer */
@@ -243,6 +243,7 @@ main {
     position: absolute;
   }
 
+
   .extra-container-p {
     margin-top: 0px;
     margin-bottom: 0;
@@ -252,8 +253,8 @@ main {
     border-radius: 10px 10px 10px 10px;
     font-weight: bold;
     position: relative;
-    top: 130px;
-    left: 50px;
+    top: 120px;
+    left: 20px;
   }
 
   .triangle {
